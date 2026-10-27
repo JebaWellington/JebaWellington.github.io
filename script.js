@@ -145,6 +145,8 @@
   const fill = $("#timelineFill");
   const head = $("#timelineHead");
   const items = $$(".tl", timeline);
+  const blobs = $$(".blob");
+  const stacked = matchMedia("(max-width: 880px)");
   let lastY = 0;
 
   function onScroll() {
@@ -156,13 +158,20 @@
     lastY = y;
     const max = root.scrollHeight - vh;
     progress.style.transform = `scaleX(${max > 0 ? y / max : 0})`;
-    root.style.setProperty("--sy", y);
+
+    if (!reduceMotion) {
+      blobs[0].style.translate = `0 ${y * -0.12}px`;
+      blobs[1].style.translate = `0 ${y * -0.06}px`;
+    }
 
     // hero parallax: text drifts and fades, photo lags behind
+    // (on stacked layouts both move together so the photo never overlaps the text)
     if (!reduceMotion && y < vh * 1.2) {
-      heroText.style.transform = `translate3d(0, ${y * 0.18}px, 0)`;
+      const textSpeed = stacked.matches ? 0.1 : 0.18;
+      const photoSpeed = stacked.matches ? 0.1 : 0.32;
+      heroText.style.transform = `translate3d(0, ${y * textSpeed}px, 0)`;
       heroText.style.opacity = 1 - clamp(y / (vh * 0.8));
-      heroPhoto.style.transform = `translate3d(0, ${y * 0.32}px, 0) scale(${1 - clamp(y / vh) * 0.08})`;
+      heroPhoto.style.transform = `translate3d(0, ${y * photoSpeed}px, 0) scale(${1 - clamp(y / vh) * 0.08})`;
     }
 
     // about text lights up word by word
@@ -183,8 +192,15 @@
     items.forEach(it => it.classList.toggle("is-lit", it.getBoundingClientRect().top < mid));
   }
 
-  addEventListener("scroll", onScroll, { passive: true });
-  addEventListener("resize", onScroll);
+  // run scroll work at most once per frame
+  let ticking = false;
+  const requestScroll = () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => { ticking = false; onScroll(); });
+  };
+  addEventListener("scroll", requestScroll, { passive: true });
+  addEventListener("resize", requestScroll);
   onScroll();
 
   /* ---------- Pointer effects (desktop only) ---------- */
