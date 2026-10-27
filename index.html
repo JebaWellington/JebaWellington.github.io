@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jeba Wellington — CPQ Solution Architect</title>
+  <meta name="description" content="Jeba Wellington — Certified SAP CPQ Developer and Solution Architect with 11+ years in SAP CPQ, Vendavo and Quote-to-Cash.">
+  <meta name="theme-color" content="#06121c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__name"><span>J</span><span>e</span><span>b</span><span>a</span><span>&nbsp;</span><span>W</span><span>.</span></div>
+    <div class="loader__bar"><i></i></div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="blob blob--1" aria-hidden="true"></div>
+  <div class="blob blob--2" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <a href="#hero" class="brand">Jeba<span>.</span></a>
+    <nav class="nav" id="nav">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#expertise" class="nav__link">Expertise</a>
+      <a href="#career" class="nav__link">Career</a>
+      <a href="#credentials" class="nav__link">Credentials</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+    <div class="header__actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle colour theme">
+        <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a href="#contact" class="btn btn--small magnetic">Hire me</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__text" id="heroText">
+          <p class="eyebrow reveal"><span class="dot"></span> Available for CPQ architecture engagements</p>
+          <h1 class="hero__title">
+            <span class="line"><span class="word">Jeba</span></span>
+            <span class="line"><span class="word accent">Wellington</span></span>
+          </h1>
+          <p class="hero__role reveal">CPQ Solution Architect · <span class="typed" id="typed"></span><span class="caret">|</span></p>
+          <p class="hero__summary reveal">
+            With 11+ years in SAP CPQ, I design scalable enterprise solutions, optimise Quote-to-Cash
+            processes and modernise legacy systems. I pair technical depth with solution architecture and
+            client collaboration to deliver results the business can measure.
+          </p>
+          <div class="hero__cta reveal">
+            <a href="mailto:jebawellington.m@gmail.com" class="btn magnetic">
+              <span>Email Jeba</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="tel:+919003363816" class="btn btn--ghost magnetic">Call +91 90033 63816</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="parallax" id="heroPhoto">
+          <div class="portrait tilt" id="portrait">
+            <div class="portrait__ring"></div>
+            <img src="assets/jeba-portrait.jpg" alt="Portrait of Jeba Wellington wearing a light blazer" width="800" height="1024">
+            <div class="chip chip--1"><strong>11+</strong> years in CPQ</div>
+            <div class="chip chip--2"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg> SAP CPQ Certified</div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>SAP CPQ</span><span>Vendavo CPQ</span><span>Quote-to-Cash</span><span>Salesforce</span><span>SAP CPI</span><span>S/4HANA</span><span>Python</span><span>TypeScript</span><span>Legacy Modernisation</span><span>Agile</span>
+          <span>SAP CPQ</span><span>Vendavo CPQ</span><span>Quote-to-Cash</span><span>Salesforce</span><span>SAP CPI</span><span>S/4HANA</span><span>Python</span><span>TypeScript</span><span>Legacy Modernisation</span><span>Agile</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div>
+          <p class="label reveal">01 / About</p>
+          <h2 class="heading reveal">Architecting <em>quote-to-cash</em> systems that scale.</h2>
+        </div>
+        <div>
+          <p class="lead lit-text" id="litText">
+            Certified SAP CPQ Developer and Solution Architect with 11+ years of experience in SAP CPQ
+            solution architecture, development and enterprise delivery. My work spans scalable quote-to-cash
+            systems, legacy modernisation, cross-functional leadership, client interaction and Agile delivery.
+          </p>
+          <div class="stats">
+            <div class="stat reveal"><span class="stat__num" data-count="11">0</span><span class="stat__plus">+</span><p>Years of experience</p></div>
+            <div class="stat reveal" data-delay="100"><span class="stat__num" data-count="12">0</span><p>Enterprise clients</p></div>
+            <div class="stat reveal" data-delay="200"><span class="stat__num" data-count="4">0</span><p>Industries served</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise -->
+    <section class="section" id="expertise">
+      <div class="container">
+        <p class="label reveal">02 / Expertise</p>
+        <h2 class="heading reveal">Platforms, technologies &amp; <em>core competencies</em>.</h2>
+
+        <div class="cards">
+          <article class="card reveal spotlight">
+            <div class="card__icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M17.5 14v7M14 17.5h7"/></svg></div>
+            <h3>Platforms &amp; integrations</h3>
+            <ul class="tags">
+              <li>SAP CPQ</li><li>SAP Cloud Platform</li><li>SAP Cloud Platform Functions</li>
+              <li>SAP Configuration and Pricing Service</li><li>SAP integrations (Sales Cloud, CPI, ECC, S/4)</li>
+              <li>Salesforce</li><li>MS Dynamics</li>
+            </ul>
+          </article>
+          <article class="card reveal spotlight" data-delay="100">
+            <div class="card__icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
+            <h3>Development &amp; data</h3>
+            <ul class="tags">
+              <li>Python</li><li>JavaScript</li><li>HTML/CSS</li><li>Visualforce/Apex</li><li>MS SQL Server/T-SQL</li>
+            </ul>
+          </article>
+          <article class="card reveal spotlight" data-delay="200">
+            <div class="card__icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+            <h3>Architecture &amp; core competencies</h3>
+            <ul class="tags">
+              <li>SAP CPQ architecture and development</li><li>Quote-to-Cash</li><li>Solution design and client consulting</li>
+              <li>Cross-platform integration (SAP, Salesforce, JD Edwards)</li><li>Legacy modernisation</li>
+              <li>Performance optimisation</li><li>Deployment strategy</li><li>Agile</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="industries">
+          <h3 class="subheading reveal">Industry expertise</h3>
+          <div class="industry-grid">
+            <div class="industry reveal"><span>01</span>Discrete &amp; Industrial Manufacturing</div>
+            <div class="industry reveal" data-delay="80"><span>02</span>Telecommunications</div>
+            <div class="industry reveal" data-delay="160"><span>03</span>E-Commerce</div>
+            <div class="industry reveal" data-delay="240"><span>04</span>Government Solutions</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Career -->
+    <section class="section" id="career">
+      <div class="container">
+        <p class="label reveal">03 / Career</p>
+        <h2 class="heading reveal">A decade-plus <em>career timeline</em>.</h2>
+
+        <ol class="timeline" id="timeline">
+          <li class="timeline__progress" aria-hidden="true"><i id="timelineFill"></i><b class="timeline__head" id="timelineHead"></b></li>
+          <li class="tl reveal">
+            <span class="tl__date">Jul 2025 — Present</span>
+            <div class="tl__body"><h3>Solution Architect</h3><p class="tl__org">Shaw <small>(Vendavo CPQ)</small></p>
+              <p>TypeScript pricing logic, product configuration and validation, approval workflows, REST API integrations with CRM/ERP/Billing, asynchronous handling/retries, performance optimisation and reusable components.</p></div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__date">Jan 2023 — Jun 2025</span>
+            <div class="tl__body"><h3>Solution Architect</h3><p class="tl__org">Honeywell</p>
+              <p>Requirements leadership, reusable Python modules, performance and deployment improvements.</p></div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__date">Jan 2021 — Present</span>
+            <div class="tl__body"><h3>Development Manager</h3><p class="tl__org">T-Systems</p>
+              <p>Client liaison, GitHub deployment automation, code/database optimisation and error tracking.</p></div>
+          </li>
+          <li class="tl reveal"><span class="tl__date">2020</span><div class="tl__body"><h3>Development Manager</h3><p class="tl__org">OC Tanner</p></div></li>
+          <li class="tl reveal"><span class="tl__date">2019</span><div class="tl__body"><h3>Development Manager</h3><p class="tl__org">Palo Alto Networks</p></div></li>
+          <li class="tl reveal"><span class="tl__date">2019</span><div class="tl__body"><h3>Senior Developer</h3><p class="tl__org">James Hardie Building Products</p></div></li>
+          <li class="tl reveal"><span class="tl__date">2018 — 2019</span><div class="tl__body"><h3>Senior Developer</h3><p class="tl__org">Lennar Home Builders</p></div></li>
+          <li class="tl reveal"><span class="tl__date">2018</span><div class="tl__body"><h3>Senior Developer</h3><p class="tl__org">Gemalto / Thales DIS</p></div></li>
+          <li class="tl reveal"><span class="tl__date">2017 — 2018</span><div class="tl__body"><h3>Senior Developer</h3><p class="tl__org">Catalent</p></div></li>
+          <li class="tl reveal"><span class="tl__date">2016 — 2017</span><div class="tl__body"><h3>Senior Developer</h3><p class="tl__org">Star2Star Communications</p></div></li>
+          <li class="tl reveal"><span class="tl__date">2015 — 2016</span><div class="tl__body"><h3>Associate Developer</h3><p class="tl__org">Verizon Communications</p></div></li>
+          <li class="tl reveal"><span class="tl__date">2013 — 2015</span><div class="tl__body"><h3>Python Developer</h3><p class="tl__org">Jeganee Technologies</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Credentials -->
+    <section class="section" id="credentials">
+      <div class="container">
+        <p class="label reveal">04 / Credentials</p>
+        <h2 class="heading reveal">Certifications &amp; <em>education</em>.</h2>
+        <div class="creds">
+          <article class="cred reveal spotlight">
+            <span class="cred__badge">Certification</span>
+            <h3>SAP CPQ Developer Certified</h3>
+            <p>SAP CPQ Developer Certification · 2019</p>
+          </article>
+          <article class="cred reveal spotlight" data-delay="100">
+            <span class="cred__badge">Certification</span>
+            <h3>Agile Scrum Practitioner</h3>
+            <p>Scrum delivery and sprint practices</p>
+          </article>
+          <article class="cred reveal spotlight" data-delay="200">
+            <span class="cred__badge">Education</span>
+            <h3>BSc Electrical Engineering</h3>
+            <p>Anna University · 2011</p>
+          </article>
+          <article class="cred reveal spotlight" data-delay="300">
+            <span class="cred__badge">Tools</span>
+            <h3>Project management</h3>
+            <p>Jira and Confluence</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact__card reveal">
+          <p class="label">05 / Contact</p>
+          <h2 class="contact__title">Let’s build your next<br><em>CPQ solution</em> together.</h2>
+          <a href="mailto:jebawellington.m@gmail.com" class="contact__email magnetic">jebawellington.m@gmail.com</a>
+          <div class="contact__grid">
+            <a href="tel:+919003363816" class="contact__item">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+              <span><small>Phone</small>+91 90033 63816</span>
+            </a>
+            <a href="https://www.linkedin.com/in/jebawellington/" target="_blank" rel="noopener" class="contact__item">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg>
+              <span><small>LinkedIn</small>JebaWellington</span>
+            </a>
+            <div class="contact__item">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span><small>Location</small>Chennai, Tamil Nadu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Jeba Wellington. All rights reserved.</p>
+      <a href="#hero" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
